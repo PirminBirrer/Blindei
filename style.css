@@ -1,0 +1,178 @@
+/* Grundlegendes Setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh; /* mindestens die Bildschirmhöhe */
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fbfc;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  background-color: #1e3a8a; /* Dunkelblau */
+  color: white;
+  padding: 40px 20px 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgb(30 58 138 / 0.3);
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+main {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+/* Stil der Tabellen */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  font-size: 1.1rem;
+  color: #1e293b;
+  table-layout: auto; /* passt Spaltenbreite an Inhalt an */
+}
+
+thead th {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 600;
+  padding: 14px 16px;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+  user-select: none;
+  letter-spacing: 0.03em;
+  box-shadow: inset 0 -3px 6px rgb(0 0 0 / 0.15);
+  word-wrap: break-word;
+}
+
+tbody tr {
+  background-color: #f3f6fb;
+  transition: background-color 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgb(30 58 138 / 0.1);
+}
+
+tbody tr:hover {
+  background-color: #e1e8ff;
+}
+
+tbody td {
+  padding: 12px 16px;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #dde3ee;
+  border-right: 1px solid #dde3ee;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Erste und letzte Spalte ohne links/rechts border */
+tbody td:first-child {
+  border-left: none;
+  font-weight: 600;
+  color: #0f172a;
+}
+tbody td:last-child {
+  border-right: none;
+}
+
+/* Platzstatus-Boxen */
+.status-box {
+  border-radius: 14px;
+  margin: 10px auto;
+  flex: 1 1 250px; /* flexibel in der Breite */
+  max-width: 100%;
+  padding: 20px 15px;
+  box-shadow: 0 6px 18px rgb(30 58 138 / 0.15);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.status-box.offen {
+  background-color: #22c55e; /* grün */
+}
+
+.status-box.nur-eins {
+  background-color: #ea580c; /* orange */
+}
+
+.status-box.gesperrt {
+  background-color: #b91c1c; /* rot */
+}
+
+#status-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.platz-hinweis {
+  margin-top: 5px;
+  padding: 12px 16px;
+  background-color: #fef3c7;       /* sanftes Gelb, damit es auffällt */
+  color: #78350f;                  /* dunkles Orange-Braun für gute Lesbarkeit */
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-radius: 8px;
+}
+
+
+/* Footer */
+footer {
+  text-align: right;
+  padding: 0px 20px 10px;
+  color: #475569;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 1100px) {
+  main {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  table {
+    font-size: 0.95rem;
+  }
+  .status-box {
+    font-size: 0.95rem;
+    padding: 18px 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  table {
+    font-size: 0.85rem;
+  }
+  .status-box {
+    font-size: 0.9rem;
+    padding: 15px 10px;
+  }
+}

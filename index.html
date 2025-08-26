@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aktuelle Spiele & Platzstatus</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <img src="logo.svg" alt="FC Wolhusen Logo" class="logo" />
+    <h1>Aktuelle Spiele & Platzstatus</h1>
+  </header>
+
+  <main>
+
+    <section class="section status-section">
+      <h2>Platzstatus</h2>
+      <div id="status-container" class="table-container"></div>
+      <p class="platz-hinweis">
+        Keine Laufübungen auf Haupt- und Nebenplatz. Bei schlechter Witterung immer zuerst Kunstrasen nutzen. Matschige Stellen meiden!!!
+      </p>
+    </section>
+
+    <section class="section spiele-section">
+      <h2>Aktuelle Spiele</h2>
+      <div id="spiele-container" class="table-container"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
