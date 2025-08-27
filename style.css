@@ -3,7 +3,6 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow: hidden;        /* kein Scrollen der ganzen Seite */
   min-height: 100vh; /* mindestens die Bildschirmhöhe */
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f9fbfc;
