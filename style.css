@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow: hidden;        /* kein Scrollen der ganzen Seite */
   min-height: 100vh; /* mindestens die Bildschirmhöhe */
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f9fbfc;
@@ -45,7 +46,7 @@ main {
 table {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0 12px;
+  border-spacing: 0 14px;
   font-size: 1.1rem;
   color: #1e293b;
   table-layout: auto; /* passt Spaltenbreite an Inhalt an */
@@ -65,7 +66,7 @@ thead th {
 }
 
 tbody tr {
-  background-color: #f3f6fb;
+  background-color: #e8f0fd;
   transition: background-color 0.3s ease;
   border-radius: 12px;
   box-shadow: 0 1px 4px rgb(30 58 138 / 0.1);
@@ -76,7 +77,7 @@ tbody tr:hover {
 }
 
 tbody td {
-  padding: 12px 16px;
+  padding: 8px 12px;
   text-align: center;
   vertical-align: middle;
   border-left: 1px solid #dde3ee;
